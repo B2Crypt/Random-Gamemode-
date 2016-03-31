@@ -1,0 +1,28 @@
+{% include("header.html") %}
+{%block body%}
+{% from "_formhelpers.html" import render_field %}
+      <center>
+
+        <h1>Battlefield4</h1>
+            <table>
+                <tr>
+                    <td><b>Gamemode:</b></td><td>{{selectedGame}}</td>
+                </tr>
+                <tr><td><b>Map:</b></td><td>{{selectedMap}}</td></tr>
+                <tr><td><b>Team1:</b></td><td>
+                    {%for team1 in playerTeam1%}
+                    {{team1}} -
+                    {%endfor%}
+                </td></tr>
+                <tr><td><b>Team2:</b></td><td>{%for team2 in playerTeam2%}
+                    {{team2}} -
+                    {%endfor%}</td></tr>
+            </table>
+          </center>
+<setfooter>
+
+  <div class="panel-body">
+
+  <div class="panel-footer">{% include("footer.html") %}</div>
+</div>
+</setfooter>{%endblock%}

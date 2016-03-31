@@ -1,0 +1,36 @@
+
+{% include("header.html") %}
+{%block body%}
+{% from "_formhelpers.html" import render_field %}
+<center>
+<h1>You want to play a game?</h1>
+<form name='/' method='POST' >
+    <div class="well well-lg">
+<table >
+        <tr>
+       {{render_field(form.gamemode)}}
+    </tr>
+    <tr>
+        {{render_field(form.playerlimit)}}
+    </tr>
+    <tr>
+        {{render_field(form.setPlayers)}}
+    </tr>
+    <tr>
+        <td colspan="2"><center><input type="submit" type="button" class="btn btn-primary" value="Go for it!"></center></td>
+    </tr>
+</table>
+
+
+        </div>
+</form>
+</center>
+<setfooter>
+
+  <div class="panel-body">
+
+  <div class="panel-footer">{% include("footer.html") %}</div>
+</div>
+</setfooter>
+{%endblock%}
+
