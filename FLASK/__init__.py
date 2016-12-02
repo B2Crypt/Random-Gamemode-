@@ -41,7 +41,6 @@ def BattleField4():
 
         players = session['setPlayers'].split('\n')
 
-        #players = ['Lars Ola','Stian','Petter','Trond','Aime']
         # Fill maps
         maps = ['Operation Metro','DawnBreaker','Operation Locker','Silk road','Shanghai','Dragon Valley','Flood Zone','Golmud Railway','Hainan Resort','Lancang Dam','Operation Outbreak','Paracel Storm','Rogue Transmision','Zavod 311','Zavod Natt','Altai Range','Dragon Pass','Guilin Peaks','Casbian Border','Gulf of Oman','Op Firestorm','Lost Island','Nanasha Strike','Operation Mortar','Wave Breaker','Lumphini Garden','Pearl Marked','Propaganda','Sunken Dragon','Gigants of Karelia','Hammerhead','Hangar 21','Operation Whiteout']
 
@@ -88,7 +87,6 @@ def HardLine():
         # teams = session['playerlimit']
         # Fill in who's in for the game
         players = session['setPlayers'].split('\n')
-        #players = ['Lars Ola', 'Stian', 'Petter', 'Trond', 'Aime']
         # Fill maps
         maps = ['Bank Job', 'Derailed', 'Downtown', 'Dust Bowl', 'Everglades', 'Growhouse', 'Hollywood heights', 'Night Job', 'Nightwood', 'Riptide', 'The Block', 'Backwood', 'Black Friday', 'Code blue','The Beat', 'Break Pointe', 'Museum', 'Precinct 7 ', 'The Dock', 'Diversion', 'Double Cross','Pacific Hightway', 'Train Dodge']
         # Fill in Gamemode
@@ -132,7 +130,6 @@ def RocketLeague():
         # teams = session['playerlimit']
         # Fill in who's in for the game
         players = session['setPlayers'].split('\n')
-        #players = ['Lars Ola', 'Stian', 'Petter', 'Trond', 'Aime']
         # Fill maps
         maps = ['Wasteland', 'DFH Stadium', 'Underpass', 'Dobbel Goal', 'Urban Stadium', 'Mannfield', 'Beckwith Park',
                 'Utopia Coliseum(Night)', 'Mannfield (Snowdy)', 'Beckwith Park(Stormy)', 'Beckwith Park(Midnight)',
